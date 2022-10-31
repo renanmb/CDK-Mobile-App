@@ -66,7 +66,6 @@ class SecurityStack(core.Stack):
             )
         )
         
-
         core.CfnOutput(self, 'redis-export',
             export_name='redis-sg-export',
             value=redis_sg.security_group_id
